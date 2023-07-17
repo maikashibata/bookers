@@ -19,7 +19,7 @@ class BooksController < ApplicationController
   end
 
   private
-  def list_params
+  def book_params
     params.require(:book).permit(:title, :body)
   end
 end
